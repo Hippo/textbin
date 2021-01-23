@@ -16,7 +16,7 @@ public class TextbinService {
     private final TextbinDao textbinDao;
 
     @Autowired
-    public TextbinService(@Qualifier("offlineTextbin") TextbinDao textbinDao) {
+    public TextbinService(@Qualifier("mongoTextbin") TextbinDao textbinDao) {
         this.textbinDao = textbinDao;
     }
 
