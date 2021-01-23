@@ -36,4 +36,14 @@ public final class TextbinController {
         }
         return ResponseEntity.ok(bin);
     }
+
+    @DeleteMapping
+    public ResponseEntity<?> deleteMapping() {
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+    }
+
+    @PutMapping
+    public ResponseEntity<?> putMapping() {
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+    }
 }
